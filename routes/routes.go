@@ -1,9 +1,10 @@
 package routes
 
-import "github.com/gofiber/fiber/v2"
+import (
+	"github.com/gofiber/fiber/v2"
+	"github.com/reecerose/go-jwt-auth/controllers"
+)
 
 func Setup(app *fiber.App) {
-	app.Get("/", func(c *fiber.Ctx) error {
-		return c.SendString("Hello, World 👋!")
-	})
+	app.Post("/api/auth/register", controllers.Register)
 }
