@@ -2,21 +2,16 @@ package main
 
 import (
 	"github.com/gofiber/fiber/v2"
-	"gorm.io/driver/sqlite"
-	"gorm.io/gorm"
+	"github.com/reecerose/go-jwt-auth/database"
+	"github.com/reecerose/go-jwt-auth/routes"
 )
 
 func main() {
-	_, err := gorm.Open(sqlite.Open("jwt.db"), &gorm.Config{})
-	if err != nil {
-		panic("Could not connect to database")
-	}
+	database.Connect()
 
 	app := fiber.New()
 
-	app.Get("/", func(c *fiber.Ctx) error {
-		return c.SendString("Hello, World 👋!")
-	})
+	routes.Setup(app)
 
 	app.Listen(":3000")
 }
