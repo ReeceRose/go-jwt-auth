@@ -1,9 +1,14 @@
 package controllers
 
 import (
+	"strconv"
+	"time"
+
+	"github.com/form3tech-oss/jwt-go"
 	"github.com/gofiber/fiber/v2"
 	"github.com/reecerose/go-jwt-auth/database"
 	"github.com/reecerose/go-jwt-auth/models"
+	"github.com/reecerose/go-jwt-auth/utils"
 	"golang.org/x/crypto/bcrypt"
 )
 
@@ -51,5 +56,16 @@ func Login(c *fiber.Ctx) error {
 		return c.JSON(fiber.Map{"message": "failed to login"})
 	}
 
-	return c.JSON(user)
+	claims := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.StandardClaims{
+		Issuer:    strconv.Itoa(int(user.Id)),
+		ExpiresAt: time.Now().Add(time.Hour * 24).Unix(),
+	})
+
+	token, err := claims.SignedString([]byte(utils.SECRET_KEY))
+	if err != nil {
+		c.SendStatus(fiber.StatusInternalServerError)
+		return c.JSON(fiber.Map{"message": "failed to login"})
+	}
+
+	return c.JSON(fiber.Map{"token": token})
 }
