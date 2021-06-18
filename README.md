@@ -2,9 +2,6 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT/)
 [![Build](https://github.com/ReeceRose/go-jwt-auth/actions/workflows/go.yml/badge.svg)](https://github.com/ReeceRose/go-jwt-auth/actions/workflows/go.yml/)
-[![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://GitHub.com/reecerose/go-jwt-auth/releases/)
-[![Made with Go](https://img.shields.io/badge/Made%20with-Go-1f425f.svg)](http://golang.org/)
-[![Go version](https://img.shields.io/github/go-mod/go-version/gomods/athens.svg)](https://github.com/ReeceRose/go-jwt-auth/)
 [![GoReportCard](https://goreportcard.com/badge/github.com/nanomsg/mangos)](https://goreportcard.com/report/github.com/ReeceRose/go-jwt-auth/)
 
 Simple JWT authentication REST API built with Go & Fiber
