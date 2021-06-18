@@ -1,5 +1,4 @@
-# github.com/andybalholm/brotli v1.0.3
-## explicit
+# github.com/andybalholm/brotli v1.0.2
 github.com/andybalholm/brotli
 # github.com/form3tech-oss/jwt-go v3.2.3+incompatible
 ## explicit
@@ -23,8 +22,7 @@ github.com/gofiber/jwt/v2
 github.com/jinzhu/inflection
 # github.com/jinzhu/now v1.1.2
 github.com/jinzhu/now
-# github.com/klauspost/compress v1.13.1
-## explicit
+# github.com/klauspost/compress v1.12.2
 github.com/klauspost/compress/flate
 github.com/klauspost/compress/gzip
 github.com/klauspost/compress/zlib
@@ -43,8 +41,7 @@ github.com/valyala/tcplisten
 ## explicit
 golang.org/x/crypto/bcrypt
 golang.org/x/crypto/blowfish
-# golang.org/x/sys v0.0.0-20210616094352-59db8d763f22
-## explicit
+# golang.org/x/sys v0.0.0-20210615035016-665e8c7367d1
 golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/unix
 golang.org/x/sys/windows
