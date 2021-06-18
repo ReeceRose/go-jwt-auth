@@ -12,11 +12,11 @@ Currently the project contains two routes:
 
 - `/api/auth/login`
   - Used to login an existing user.
-  - Returns a JWT if login is successfull.
-  - Can easily be modifed to use/send cookies
+  - Returns a JWT if login is successful.
+  - Can easily be modified to use/send cookies
 - `/api/auth/register`
   - Used to register a new user.
-  - Returns the user if registration is successfull.
+  - Returns the user if registration is successful.
 
 ## Dependencies
 
@@ -45,7 +45,7 @@ In the desired folder, run:
 git clone git@github.com:ReeceRose/go-jwt-auth.git .
 ```
 
-## Install dependenceis
+## Install dependencies
 
 In the root project folder, run:
 
