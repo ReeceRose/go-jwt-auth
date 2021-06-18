@@ -49,12 +49,20 @@ In the desired folder, run:
 git clone git@github.com:ReeceRose/go-jwt-auth.git .
 ```
 
+## Vendor dependencies
+
+In the root project folder, run:
+
+```bash
+go mod vendor
+```
+
 ## Install dependencies
 
 In the root project folder, run:
 
 ```bash
-go install
+go get ./...
 ```
 
 ## Run API
