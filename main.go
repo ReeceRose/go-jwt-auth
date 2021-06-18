@@ -16,11 +16,13 @@ func main() {
 
 	app.Use(cors.New())
 
-	routes.Setup(app)
+	routes.SetupPublicRoutes(app)
 
 	app.Use(jwtware.New(jwtware.Config{
 		SigningKey: []byte(utils.SECRET_KEY),
 	}))
+
+	routes.SetupPrivateRoutes(app)
 
 	app.Listen(":3000")
 }

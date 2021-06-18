@@ -5,7 +5,11 @@ import (
 	"github.com/reecerose/go-jwt-auth/controllers"
 )
 
-func Setup(app *fiber.App) {
+func SetupPublicRoutes(app *fiber.App) {
 	app.Post("/api/auth/register", controllers.Register)
 	app.Post("/api/auth/login", controllers.Login)
+}
+
+func SetupPrivateRoutes(app *fiber.App) {
+
 }
