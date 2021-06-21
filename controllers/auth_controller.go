@@ -12,6 +12,7 @@ import (
 	"golang.org/x/crypto/bcrypt"
 )
 
+// Register a new user
 func Register(c *fiber.Ctx) error {
 	var data map[string]string
 
@@ -33,6 +34,7 @@ func Register(c *fiber.Ctx) error {
 	return c.JSON(user)
 }
 
+// Login an existing user
 func Login(c *fiber.Ctx) error {
 	var data map[string]string
 

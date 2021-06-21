@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT/)
 [![Build](https://github.com/ReeceRose/go-jwt-auth/actions/workflows/go.yml/badge.svg)](https://github.com/ReeceRose/go-jwt-auth/actions/workflows/go.yml/)
-[![GoReportCard](https://goreportcard.com/badge/github.com/nanomsg/mangos)](https://goreportcard.com/report/github.com/ReeceRose/go-jwt-auth/)
+[![GoReportCard](https://goreportcard.com/badge/github.com/nanomsg/mangos)](https://goreportcard.com/report/github.com/ReeceRose/go-jwt-auth)
 
 Simple JWT authentication REST API built with Go & Fiber
 
