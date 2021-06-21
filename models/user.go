@@ -1,6 +1,6 @@
 package models
 
-// Database/System User model
+// User model for database
 type User struct {
 	Id       uint
 	Name     string
